@@ -1,0 +1,330 @@
+/* Import PT Sans Font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/* Global Box Model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', Verdana, Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* General Container */
+.fluid-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+ul {
+  list-style: none;
+  background: blue;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #005fa3;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: #004d87;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+
+/* Image and Video Centering */
+section img,
+section video {
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Flexible Typography */
+h1, h2, h3 {
+  font-family: 'PT Sans', Verdana, Arial;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: calc(2vw + 20px);
+  color: #0066cc;
+}
+
+h2 {
+  font-size: calc(1.5vw + 18px);
+  color: #444;
+}
+
+/* Specific Styles for index.html */
+
+/* 1. Style for sections in index.html */
+.index-page section {
+  background-color: #e1f7ff; /* Light blue background for sections in index.html */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the sections */
+  border: 2px solid #0066cc; /* Blue border to match the theme */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px; /* Space between sections */
+}
+
+/* 2. Custom style for h1 (main heading) */
+.index-page h1 {
+  font-size: 3.5em; /* Larger size for the main heading */
+  color: #0066cc; /* Custom color for the heading */
+  font-family: 'PT Sans', Arial;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for extra emphasis */
+  margin-bottom: 20px;
+}
+
+/* 3. Style for .introduction-section */
+.index-page .introduction-section {
+  background-color: #ffffff; /* White background for the introduction section */
+  padding: 20px; /* Padding to make it feel more spacious */
+  border-radius: 10px; /* Rounded corners for a softer feel */
+  border: 2px solid #0066cc; /* Blue border to match the theme */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px; /* Space between sections */
+}
+
+/* 4. Image hover effect (grow when hovered) */
+.index-page section img:hover {
+  transform: scale(1.05); /* Slightly increase the size of the image */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* 5. Style for paragraphs inside .introduction-section */
+.index-page .introduction-section p {
+  font-size: 1.2em; /* Larger font size for easier reading */
+  line-height: 1.6;
+  color: #333333; /* Darker text color for readability */
+  font-family: 'PT Sans', Arial;
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Specific Styles for resume.html */
+
+/* 1. Background color of sections in resume.html */
+.resume-page section {
+  background-color: #f9f9f9; /* Light gray background for sections */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px; /* Space between sections */
+  color: black; /* Set text color to black for all text within sections */
+}
+
+/* 2. Style for h2 in resume.html */
+.resume-page h2 {
+  font-size: 2em; /* Larger size for h2 headings */
+  color: #0066cc; /* Custom color for the headings */
+  font-weight: bold;
+  text-decoration: underline; /* Underlined text for extra emphasis */
+  margin-bottom: 15px;
+}
+
+/* 3. Style for h3 in resume.html */
+.resume-page h3 {
+  font-size: 1.75em; /* Size for h3 headings */
+  color: #0066cc; /* Custom color */
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* 4. Custom list styling for <ul> in resume.html */
+.resume-page ul {
+  padding-left: 20px; /* Add padding to the left for list items */
+  list-style-type: square; /* Square bullets for list items */
+  font-size: 1.1em; /* Slightly larger text for better readability */
+  color: black; /* Set the list text color to black */
+}
+
+/* 5. Link styling for email and LinkedIn in resume.html */
+.resume-page a {
+  color: #000; /* Black color for links */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.resume-page a:hover {
+  text-decoration: underline; /* Underline links when hovered */
+  color: #004d87; /* Darker blue color when hovered */
+}
+
+/* 6. Card-style experience box in resume.html */
+.resume-page .experience-entry {
+  background-color: white; /* White background for the job entry */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card-like effect */
+  margin-bottom: 15px; /* Space between job entries */
+}
+
+.resume-page .experience-entry h3 {
+  font-size: 1.5em; /* Job title font size */
+  color: #0066cc; /* Blue color for job title */
+  margin-bottom: 10px; /* Space below job title */
+}
+
+.resume-page .experience-entry p {
+  font-size: 1.1em; /* Larger text for job description */
+  color: black; /* Set job description text color to black */
+  line-height: 1.6; /* Improved line height for paragraph spacing */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general page settings */
+body {
+  font-family: Arial, Arial;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Bullet Point Navigation */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+}
+
+ul li a:hover {
+  color: #004d87;
+  text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Background Colors for Each Section */
+section.persona3 { /* Persona 3 */
+  background-color: #e0f7fa; /* Light Blue */
+}
+
+section.persona4 { /* Persona 4 */
+  background-color: #fff9c4; /* Light Yellow */
+}
+
+section.persona5 { /* Persona 5 */
+  background-color: #ffcdd2; /* Very Light Red */
+}
+
+section.smt4 { /* SMT 4 */
+  background-color: #c8e6c9; /* Light Green */
+}
+
+section.nocturne { /* Nocturne */
+  background-color: white; /* White background stays as is */
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Paragraph text */
+section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Video styling */
+video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Special Section Styling */
+section p strong {
+  font-weight: bold;
+  color: #0066cc;
+}
