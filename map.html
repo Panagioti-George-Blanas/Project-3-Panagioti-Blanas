@@ -2,91 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panagioti Blanas - Map</title>
-
-  <!-- Link to Reset and Main Stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- External JavaScript Files -->
+  
+  <!-- Your Custom JavaScript Files -->
   <script src="js/darkmode.js" defer></script>
   <script src="js/backtotop.js" defer></script>
+  <script src="js/map.js" defer></script>
+
+  <!-- Map styling -->
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body class="map-page">
-  <!-- Bullet Point Navigation -->
-  <nav> 
-    <ul>
-      <li><a href="index.html">About me</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="smt.html">SMT</a></li>
-      <li><a href="map.html">Map</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav>
+  <ul>
+    <li><a href="index.html">About me</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="smt.html">SMT</a></li>
+    <li><a href="google_maps.html">Map</a></li>
+  </ul>
   </nav>
+  <!-- Main Content -->
   <div class="fluid-container">
     <h1>Where I've Been</h1>
-    <p>This map shows a few places important to me. Click the markers to learn more!</p>
+    <p>This map shows a few places important to me. Click the markers to see more :)</p>
     <div id="map"></div>
   </div>
 
-  <script>
-    function initMap() {
-      const myLocations = [
-        {
-          position: { lat: 41.7406, lng: -87.8045 }, // Bridgeview, IL
-          title: "Burbank, IL",
-          content: "<strong>Hometown:</strong> This is where I grew up."
-        },
-        {
-          position: { lat: 41.7508, lng: -87.8181 }, // Moraine Valley CC
-          title: "Moraine Valley Community College",
-          content: "<strong>College:</strong> Earned my Associate Degree here."
-        },
-        {
-          position: { lat: 41.8349, lng: -87.6270 }, // Illinois Tech
-          title: "Illinois Institute of Technology",
-          content: "<strong>Current University:</strong> Where I'm studying IT Management."
-        }
-      ];
-
-      const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 41.75, lng: -87.78 },
-        zoom: 11,
-        styles: [
-          {
-            elementType: "geometry",
-            stylers: [{ color: "#ebe3cd" }]
-          },
-          {
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#523735" }]
-          },
-          {
-            elementType: "labels.text.stroke",
-            stylers: [{ color: "#f5f1e6" }]
-          }
-        ]
-      });
-
-      myLocations.forEach(loc => {
-        const marker = new google.maps.Marker({
-          position: loc.position,
-          map: map,
-          title: loc.title
-        });
-
-        const infoWindow = new google.maps.InfoWindow({
-          content: loc.content
-        });
-
-        marker.addListener("click", () => {
-          infoWindow.open(map, marker);
-        });
-      });
-    }
-  </script>
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevfz63VJvh4BKyl0f5MvYIEiUecVfftM&callback=initMap">
-  </script>
+  <!-- Google Maps API -->
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevfz63VJvh4BKyl0f5MvYIEiUecVfftM&callback=initMap"></script>
 </body>
 </html>
