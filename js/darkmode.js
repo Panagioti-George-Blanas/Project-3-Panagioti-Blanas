@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     border-color: #555 !important;
   }
 
+  body.resume-page.dark-mode .experience-entry {
+    background-color: #2a2a2a !important;
+    color: white !important;
+    border-color: #555 !important;
+  }
+
   body.dark-mode a {
     color: #80d0ff !important;
   }
