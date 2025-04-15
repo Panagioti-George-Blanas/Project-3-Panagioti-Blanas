@@ -394,38 +394,24 @@ section p strong {
   max-width: 600px;
   margin: 20px auto;
   overflow: hidden;
+  text-align: center;
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
+  justify-content: center;
+  align-items: center;
   width: 300%;
 }
 
 .slides img {
-  width: 100%;
-  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
+  margin: 0 auto;
 }
-
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2;
-  border-radius: 50%;
-}
-
-.slider .prev {
-  left: 10px;
-}
-
-.slider .next {
-  right: 10px;
+.slides img {
+  max-height: 400px;
 }
