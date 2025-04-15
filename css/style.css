@@ -391,7 +391,7 @@ section p strong {
 }
 .slider {
   position: relative;
-  max-width: 600px;
+  max-width: 100%;
   margin: 20px auto;
   overflow: hidden;
   text-align: center;
@@ -399,19 +399,19 @@ section p strong {
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease;
   justify-content: center;
   align-items: center;
-  width: 300%;
+  transition: transform 0.5s ease;
+  width: 300%; 
 }
 
 .slides img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
   margin: 0 auto;
 }
 .slides img {
-  max-height: 400px;
+  max-width: 300px;
 }
