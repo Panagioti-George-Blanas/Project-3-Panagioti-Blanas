@@ -328,3 +328,63 @@ section p strong {
   font-weight: bold;
   color: #0066cc;
 }
+
+
+/* Max-width: for phones */
+@media (max-width: 600px) {
+  body {
+    font-size: 90%;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  .fluid-container {
+    padding: 10px;
+  }
+
+  section img,
+  section video {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+}
+
+
+/* Min-width: for desktops */
+@media (min-width: 1000px) {
+  body {
+    font-size: 110%;
+    background-color: #eef5ff;
+  }
+
+  ul li a {
+    padding: 14px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+  }
+
+  section {
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  .intro-text {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+}
