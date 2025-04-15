@@ -19,21 +19,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const style = document.createElement('style');
   style.textContent = `
-  .dark-mode {
+  body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
   }
-  .dark-mode section {
-    background-color: #1e1e1e;
-    border-color: #444;
+
+  body.dark-mode section {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    border-color: #444 !important;
   }
-  .dark-mode .introduction-section {
+
+  body.index-page.dark-mode .introduction-section {
     background-color: #2a2a2a !important;
     color: white !important;
     border-color: #555 !important;
   }
-  .dark-mode a {
-    color: #80d0ff;
+
+  body.dark-mode a {
+    color: #80d0ff !important;
+  }
+
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode p,
+  body.dark-mode li {
+    color: white !important;
   }
 `;
   document.head.appendChild(style);
