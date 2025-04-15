@@ -36,10 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
     border-color: #555 !important;
   }
 
-  body.resume-page.dark-mode .experience-entry {
+  body.resume-page.dark-mode section.experience-entry {
     background-color: #2a2a2a !important;
     color: white !important;
     border-color: #555 !important;
+  }
+
+  body.resume-page.dark-mode .experience-entry p,
+  body.resume-page.dark-mode .experience-entry h3,
+  body.resume-page.dark-mode .experience-entry li {
+    color: white !important;
   }
 
   body.dark-mode a {
