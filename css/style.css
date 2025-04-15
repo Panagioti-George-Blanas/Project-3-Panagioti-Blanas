@@ -391,27 +391,45 @@ section p strong {
 }
 .slider {
   position: relative;
+  text-align: center;
   max-width: 100%;
   margin: 20px auto;
-  overflow: hidden;
-  text-align: center;
 }
 
 .slides {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease;
-  width: 300%; 
+  position: relative;
 }
 
 .slides img {
-  max-width: 80%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-.slides img {
+  display: none;
   max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.slides img.active {
+  display: block;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
 }
